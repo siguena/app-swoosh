@@ -55,6 +55,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="aU6-iX-UFN" kind="show" id="Yk1-u8-9Un"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEb-9l-57X">
                                 <rect key="frame" x="52.5" y="226" width="270" height="37"/>
@@ -173,6 +176,17 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5j-vR-YjV">
+                                <rect key="frame" x="0.0" y="30" width="51" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="CNY-76-vxT"/>
+                                    <constraint firstAttribute="width" constant="51" id="mwc-zt-zXG"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="aVn-bo-kVx" kind="unwind" unwindAction="unwindFromTheSkillVCWithUnwindSegue:" id="3T3-mb-wKS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -188,12 +202,15 @@
                             <constraint firstItem="WQu-ib-a1I" firstAttribute="top" secondItem="uAb-RQ-UmR" secondAttribute="top" id="fRv-CI-fjF"/>
                             <constraint firstItem="WQu-ib-a1I" firstAttribute="trailing" secondItem="SRl-vJ-GzL" secondAttribute="trailing" id="hh1-Ud-nDr"/>
                             <constraint firstItem="vaT-U3-Zpo" firstAttribute="leading" secondItem="SRl-vJ-GzL" secondAttribute="leading" constant="20" id="m47-ho-Pxg"/>
+                            <constraint firstItem="L5j-vR-YjV" firstAttribute="leading" secondItem="SRl-vJ-GzL" secondAttribute="leading" id="o0i-TK-Ip8"/>
                             <constraint firstItem="WQu-ib-a1I" firstAttribute="leading" secondItem="SRl-vJ-GzL" secondAttribute="leading" id="vCF-A9-dAg"/>
+                            <constraint firstItem="L5j-vR-YjV" firstAttribute="top" secondItem="SRl-vJ-GzL" secondAttribute="top" constant="10" id="wQ7-Aa-ihL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SRl-vJ-GzL"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYG-DQ-sbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="aVn-bo-kVx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="976.79999999999995" y="131.78410794602701"/>
         </scene>
@@ -291,6 +308,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
