@@ -22,9 +22,9 @@ class ViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+  
+    @IBAction func unwindFromTheSkillVC (unwindSegue: UIStoryboardSegue){
+        
     }
 
 
