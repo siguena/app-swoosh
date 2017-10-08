@@ -139,6 +139,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMansTapped:" destination="aU6-iX-UFN" eventType="touchUpInside" id="xoj-Rt-XAU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqe-UQ-9lY" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="82" width="335" height="62"/>
@@ -150,6 +153,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomanTapped:" destination="aU6-iX-UFN" eventType="touchUpInside" id="sTB-Us-1gq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlS-Jd-sNL" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="164" width="335" height="62"/>
@@ -161,12 +167,18 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoEdTapped:" destination="aU6-iX-UFN" eventType="touchUpInside" id="JpB-9j-GH5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jr-Dn-N8r" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jr-Dn-N8r" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="20" y="585" width="335" height="62"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.38714683220000001" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="kcZ-2O-8bW"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="ze1-Z6-wUp"/>
@@ -212,6 +224,7 @@
                         <viewLayoutGuide key="safeArea" id="SRl-vJ-GzL"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="3Jr-Dn-N8r" id="Fpi-cu-yMK"/>
                         <segue destination="Xdb-QE-9AT" kind="show" identifier="skillVCSegue" id="a08-sz-uqi"/>
                     </connections>
                 </viewController>
